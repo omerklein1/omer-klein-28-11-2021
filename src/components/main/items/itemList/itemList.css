@@ -1,0 +1,26 @@
+.list-btn {
+    font-size: 1.5rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.td-list-btn:hover,
+.td-list-btn:hover .list-btn {
+    background-color: #b0d8a4;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .list-btn {
+        font-size: inherit;
+    }
+
+    .td-list-btn,
+    .td-list-btn .list-btn {
+        background-color: #b0d8a4;
+        color: white;
+    }
+
+
+}

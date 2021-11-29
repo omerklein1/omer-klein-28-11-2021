@@ -1,0 +1,125 @@
+.add-item {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 4rem;
+}
+
+.add-item-btn {
+    margin: 1rem;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 8px 1px #0000002b;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    transition: background-color 1s, color 1s;
+    padding: 0 1rem;
+    line-height: 0.5rem;
+}
+
+.plus {
+    transition: transform 1s;
+    display: inline-block;
+}
+
+.add-item-btn:hover {
+    background-color: #b0d8a4;
+    color: white;
+}
+
+.add-item-btn:hover .plus {
+    transform: rotate(1080deg);
+
+}
+
+.form-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form-data .input,
+.autocomplete {
+    margin: 1rem;
+    flex: 40%;
+    min-height: 3rem;
+    max-width: 20rem;
+}
+
+.autocomplete {
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    margin: auto;
+    border: .5px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.autocomplete .autocomplete-list {
+    opacity: 0;
+    color: black;
+    position: absolute;
+    /* border: 1px solid #d4d4d4; */
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: calc(100% - 1rem);
+    left: 0;
+    width: 1%;
+    transition: width 0.5s;
+}
+
+.show {
+    opacity: 1 !important;
+    width: 105% !important;
+}
+
+.product-list-name {
+    background-color: white;
+    border-bottom: 1px solid grey;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.product-list-name:hover {
+    background-color: #fee191;
+    cursor: pointer;
+}
+
+.error {
+    margin: 0 auto;
+    width: 80%;
+    overflow-wrap: break-word;
+    color: #e84158;
+    text-align: center;
+}
+
+.form-btn * {
+    border-radius: 1rem;
+    width: 5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: none;
+}
+
+.form-btn input:hover {
+    background-color: #b0d8a4;
+}
+
+.form-btn button:hover {
+    background-color: #e84158;
+}
+
+@media (max-width: 767px) {
+    .add-item {
+        justify-content: center;
+    }
+
+    .form-data .input,
+    .autocomplete {
+        flex: none;
+    }
+}

@@ -1,0 +1,31 @@
+.menu {
+    height: 3rem;
+    background-color: white;
+    box-shadow: 1px 1px 8px 1px #0000002b;
+}
+
+.menu div {
+    display: flex;
+    margin: auto 4rem;
+}
+
+.menu p {
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 1s, color 1s;
+}
+
+.menu p:hover {
+    transform: scale(1.05);
+}
+
+.menu p.selected {
+    color: #b0d8a4 !important;
+}
+
+@media (max-width: 767px) {
+    .menu div {
+        justify-content: space-between;
+    }
+
+}
