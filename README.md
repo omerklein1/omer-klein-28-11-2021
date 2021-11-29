@@ -1,3 +1,8 @@
+# Shopping Tracking List
+In this project you can add a list of your shopping items by name, store, price and date to delivery list.
+You can move items to archive list from delivery list and even reactive them from archive list to delivery list.
+you can watch the store list that centralizes all of the items that are on the lists by stores.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
