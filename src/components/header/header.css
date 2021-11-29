@@ -46,6 +46,7 @@ nav div {
 @media (max-width: 767px) {
     nav {
         height: auto;
+        width: 100%;
     }
 
     nav div {

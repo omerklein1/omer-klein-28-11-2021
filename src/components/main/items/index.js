@@ -13,7 +13,7 @@ function Items() {
                     <p className={isArchiveList? "selected" : ""} onClick={()=>setIsArchiveList(true)}>Archive</p>
                 </div>
             </div>
-            <AddItem />
+            {isArchiveList? <br /> : <AddItem />}
             <table>
                 <thead>
                     <tr>
