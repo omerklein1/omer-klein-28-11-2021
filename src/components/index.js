@@ -13,6 +13,7 @@ function Components() {
   const [ openPopupProductListError, setOpenPopupProductListError ] = useState(true);
   const [ openPopupCurrencyValueError, setOpenPopupCurrencyValueError ] = useState(true);
   const productList = useSelector(state => state.productList)
+  const currencyValue = useSelector(state => state.currencyValue)
 
   useEffect( () => {
       dispatch(getProductList());
@@ -30,7 +31,7 @@ function Components() {
       <Popup trigger={openPopupProductListError} setTrigger={setOpenPopupProductListError} title={productList.name} subTitle={productList.message}>
         <p>Can't get product list from fakestoreapi API</p>
       </Popup>}
-      { (openPopupCurrencyValueError && productList.name === 'Error') &&
+      { (openPopupCurrencyValueError && currencyValue.name === 'Error') &&
       <Popup trigger={openPopupCurrencyValueError} setTrigger={setOpenPopupCurrencyValueError} title={productList.name} subTitle={productList.message}>
         <p>Can't get product list from exchangeratesapi API</p>
       </Popup>}
