@@ -32,7 +32,7 @@ function Components() {
         <p>Can't get product list from fakestoreapi API</p>
       </Popup>}
       { (openPopupCurrencyValueError && currencyValue.name === 'Error') &&
-      <Popup trigger={openPopupCurrencyValueError} setTrigger={setOpenPopupCurrencyValueError} title={productList.name} subTitle={productList.message}>
+      <Popup trigger={openPopupCurrencyValueError} setTrigger={setOpenPopupCurrencyValueError} title={currencyValue.name} subTitle={currencyValue.message}>
         <p>Can't get product list from exchangeratesapi API</p>
       </Popup>}
       
