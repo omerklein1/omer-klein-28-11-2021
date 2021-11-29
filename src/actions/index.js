@@ -9,7 +9,7 @@
  }
 
  export const getCurrencyValue = () => dispatch => {
-    axios.get("http://api.exchangeratesapi.io/v1/latest?access_key=1ae0f5be893069b1d305de2159f89611&format=1")
+    axios.get("//api.exchangeratesapi.io/v1/latest?access_key=1ae0f5be893069b1d305de2159f89611&format=1")
     .then(res => res.data)
     .then(data => dispatch({
         type: 'UPDATE_CURRENCY',
